@@ -1,0 +1,19 @@
+    version: '2'
+    services:
+       microservice:
+        image: 'jpolivo/encripter3des-aas-backend:0.0.1-SNAPSHOT'
+        expose:
+          - "7070"
+    
+       loadbalancer:
+        image: 'dockercloud/haproxy:latest'
+        environment:
+          - STATS_PORT=1936
+          - STATS_AUTH="admin:admin"
+        links:
+          - microservice
+        volumes:
+          - /var/run/docker.sock:/var/run/docker.sock
+        ports:
+          - '80:80'
+          - '1936:1936'
