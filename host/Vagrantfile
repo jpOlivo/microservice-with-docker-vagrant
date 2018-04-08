@@ -89,6 +89,6 @@ Vagrant.configure(2) do |config|
   ### Vagrant::DEFAULT_SERVER_URL.replace('https://vagrantcloud.com')
   
   # A message to show after vagrant up
-  config.vm.post_up_message = "Message by JP TODO"
+  config.vm.post_up_message = "More information on how to use this box:\n http://jpolivo.github.io/devops/2018/04/03/microservicios-containers.html/.\n\nEnjoy it! @jp_olivo"
   
 end
