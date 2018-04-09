@@ -12,4 +12,4 @@ There are a few orchestation examples [available here](./docker_data/).
 ### Example simple container  
 A Vagrant box is [configured here](Vagrantfile)
 
-## Any comment or suggest related with this code, please do not doubt and [reach me](https://twitter.com/jp_olivo)
+## Any comment or suggest related with this code, please [reach me](https://twitter.com/jp_olivo)
